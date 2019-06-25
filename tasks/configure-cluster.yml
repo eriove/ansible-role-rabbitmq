@@ -12,3 +12,9 @@
     owner: rabbitmq
     group: rabbitmq
     mode: 0400
+    
+- name: Restart rabbitmq to let cookies take effect
+  service:
+    name: rabbitmq-server
+    state: restarted
+

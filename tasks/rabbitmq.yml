@@ -5,7 +5,7 @@
 - include: configure.yml
 
 - include: configure-cluster.yml
-  when: rabbitmq_cluster
+  when: rabbitmq_cluster == true
 
 - name: start rabbitmq server
   service:
